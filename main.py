@@ -39,7 +39,7 @@ async def on_ready():
 
 @bot.command(name='ping')
 async def ping(ctx):
-    response = 'hewwo!'
+    response = 'hello!'
     await ctx.send(response)
 
 @bot.command(name='rmvsite')
@@ -78,7 +78,7 @@ async def addsite(ctx, url):
     if user in usersitelist:
         for site in usersitelist[user]:
             if site == url:
-                message = 'youre already tracking this one!'
+                message = "you're already tracking this one!"
                 inuse = True
         if inuse == False:
             usersitelist[user].append(url)
